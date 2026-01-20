@@ -82,6 +82,7 @@ nav {
     padding: 101px 0px;
     background-repeat: no-repeat;
     margin: 0px auto;
+    background-position: center;
 }
 .mike-icon{
     width: 350px;
@@ -224,7 +225,7 @@ nav {
     max-width: 1200px;
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 16px;
     margin: 0px auto;
@@ -251,7 +252,7 @@ nav {
     line-height: 24px;
 }
 .service-1 {
-    grid-column: span 1;
+    grid-column: span 2;
     grid-row: span 2;
     background-color: #351165;
     border-radius: 20px;
@@ -259,13 +260,18 @@ nav {
     width: 380px;
 }
 .service-2{
-    grid-column: span 2;
+    grid-column: span 4;
     grid-row: span 1;  
 }
 .service-4{
+    grid-column: span 4;
+    grid-row: span 1; 
+}
+.service-5{
     grid-column: span 2;
     grid-row: span 1; 
 }
+
 
 
 
@@ -288,33 +294,37 @@ nav {
     margin-bottom: 40px;
 }
 .feature-card{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(1,1fr);
     justify-content:center;
     gap: 30px;
-    height: 440px;
+    height: 465px;
 }
 .feature-card-item{
+    grid-column: span 2;
+    grid-row: 1;
     background-color: #250D44;
     border-radius: 0px 0px 10px 10px;
-    width: 380px;
+
 }
 .feature-card-item iframe{
-    width: 380px;
     height: 214px;
     border-radius: 10px 10px 0px 0px;
+    width: 270px;
 }
 .item-content{
     padding: 24px;
 }
 .item-content h4 {
     color: #ffffff;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: bold;
 }
 .item-content p{
     color: #ffffff;
     opacity: 60%;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 24px;
     margin: 12px 0px;
 }
@@ -342,7 +352,7 @@ nav {
 }
 .host-container {
     display: flex;
-    max-width: 70%;
+    max-width: 80%;
     margin: 0px auto;
     gap: 24px;
     background-color: #250D44;
@@ -381,10 +391,10 @@ nav {
 .footer-section{
     background-image: url(image/footer-bg.png);
     width: 100%;
-    /* height: 380px; */
     background-size: cover;
     background-repeat: no-repeat;
     padding: 100px;
+    background-position: center;
 }
 .footer-content{
     max-width: 100%;
@@ -426,7 +436,27 @@ nav {
 
 
 @media screen and (max-width:576px) {
-    .menu{
-        display: none;
+    .service-1{
+        grid-column: span 3;
+        grid-row: span 1;
+        width: auto;
     }
+    .service-2{
+        grid-column: span 3;
+        grid-row: span 1;
+    }
+    .service-4{
+        grid-column: span 3;
+        grid-row: span 1;
+    }
+    .service-5{
+        grid-column: span 3;
+        grid-row: span 1;
+    }
+    .feature-card-item{
+        grid-column: span 6;
+        grid-row: span 1;
+        height: 480px;
+    }
+
 }
