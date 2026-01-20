@@ -24,7 +24,7 @@
 /* Header CSS Start From Here */
 
 header{
-    max-width: 1600px;
+    max-width: 100%;
     background-color: #1A0B2E;  
 }
 .navbar-section{
@@ -75,6 +75,7 @@ nav {
     background-position: center;
     padding: 101px 0px;
     background-repeat: no-repeat;
+    margin: 0px auto;
 }
 .mike-icon {
     width: 350px;
@@ -107,7 +108,7 @@ nav {
 
 /* Aboy CSS start */
 .about-section{
-    max-width: 1600px;
+    max-width: 100%;
     text-align: center;
     background-color: #1A0B2E;
     padding-top: 50px 200px;
@@ -167,14 +168,12 @@ nav {
 /* Service section CSs start  */
 
 .service-section{
-    max-width: 1600px;
+    max-width: 100%;
     width: 100%;
     padding: 120px 200px;
     background-color: #230E3D;
-
 }
 .service-header h2{
-    max-width: 1200px;
     margin-bottom: 40px;
     font-size: 48px;
     font-weight: bold;
@@ -201,7 +200,7 @@ nav {
     height: 60px;
 }
 .service-card-item h4 {
-    font-size: 24px;
+    font-size: 18px;
     font-weight: bold;
     color: #ffffff;
     margin: 16px 0px;
@@ -209,7 +208,7 @@ nav {
 .service-card-item p {
     color: #ffffff;
     opacity: 60%;
-    font-size: 16px;
+    font-size: 12px;
     line-height: 24px;
 }
 .service-1 {
@@ -234,12 +233,11 @@ nav {
 
 .feature-section{
     width: 100%;
-    max-width: 1600px;
+    max-width: 100%;
     background-color: #1A0B2E;
-    padding: 120px 200px;  
+    padding: 120px 200px;
 }
 .feature-container{
-    width: 75%;
     max-width: 1200px;
     margin: auto;
 }
@@ -258,25 +256,26 @@ nav {
 }
 .feature-card-item{
     background-color: #250D44;
-     border-radius: 0px 0px 10px 10px;
+    border-radius: 0px 0px 10px 10px;
     
 }
-.feature-card-item iframe{
+.feature-card-item iframe {
+    width: 380px;
     height: 214px;
     border-radius: 10px 10px 0px 0px;
 }
 .item-content{
     padding: 24px;
 }
-.item-content h4{
+.item-content h4 {
     color: #ffffff;
-    font-size: 18px;
+    font-size: 24px;
     font-weight: bold;
 }
 .item-content p{
     color: #ffffff;
     opacity: 60%;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 24px;
     margin: 12px 0px;
 }
@@ -284,4 +283,58 @@ nav {
     color: #00FF88;
     font-weight: 600;
     margin-bottom: 24px;
+}
+
+
+/* Host Section CSS start  */
+
+.host-section{
+    background-color: #1A0B2E;
+    padding-bottom: 120px;
+}
+.host-header{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.host-header h1{
+    color: #ffffff;
+    font-size: 48px;
+    font-weight: bold;
+}
+.host-container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0px auto;
+    gap: 24px;
+    background-color: #250D44;
+    border-radius: 40px;
+    padding: 40px;
+    align-items: center;
+}
+.host-image{}
+.host-image img{}
+.host-content{}
+.host-content h3{
+    font-size: 32px;
+    color: #ffffff;
+    margin-bottom: 16px;
+    font-weight: bold;
+}
+.host-content p{
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+    opacity: 60%;
+    margin-bottom: 16px;
+}
+.host-icon{}
+.host-icon span {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #aaa;
+    text-align: center;
+    line-height: 43px;
+    border-radius: 50%;
 }
