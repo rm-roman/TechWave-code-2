@@ -20,6 +20,12 @@
     text-align: center;
     font-size: 16px;
     font-weight: 600;
+    transition: .5s;
+}
+.btn:hover{
+     background: linear-gradient(26deg, #9100F8 100%,#F7E93F 10%,#d153abac 51%);
+     cursor: pointer;
+     color: rgb(251, 255, 0);
 }
 /* Header CSS Start From Here */
 
@@ -31,7 +37,7 @@ header{
     border-bottom: 1px solid #412567;
 }
 nav {
-    max-width: 1200px;
+    max-width: 100%;
     width: 75%;
     margin: auto;
     display: flex;
@@ -77,13 +83,30 @@ nav {
     background-repeat: no-repeat;
     margin: 0px auto;
 }
-.mike-icon {
+.mike-icon{
     width: 350px;
     height: 350px;
     background-image: url(image/hero-circle.png);
     background-repeat: no-repeat;
     margin: 0px auto;
     padding: 69px 75px 81px 75px;
+    position: relative;
+}
+.new-btn{
+    width: 90px;
+    height: 38px;
+    padding: 8px 16px;
+    background-color: #00FF88;
+    border-radius: 50px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.new-btn h6 {
+    color: #ffff;
+    font-size: 18px;
+    color: #000;
+    font-weight: 600;
 }
 .big-icon{
     max-width: 200px;
@@ -104,7 +127,23 @@ nav {
     opacity: 80%;
     margin-bottom: 24px;
 }
-
+.banner-btn {
+    color: #00FF88;
+    border: 2px solid #00FF88;
+    padding: 12px 20px;
+    font-size: 16px;
+    background: none;
+    border-radius: 50px;
+    gap: 8px;
+    text-align: center;
+    transition: .5s;
+}
+.banner-btn:hover{
+    cursor: pointer;
+    background: #00FF88;
+    border: 2px solid #61f3af;
+    color: #ffff;
+}
 
 /* Aboy CSS start */
 .about-section{
@@ -238,7 +277,7 @@ nav {
     padding: 120px 200px;
 }
 .feature-container{
-    max-width: 1200px;
+    width: 100%;
     margin: auto;
 }
 .feature-header h1{
@@ -250,16 +289,16 @@ nav {
 }
 .feature-card{
     display: flex;
-    justify-content: space-between;
+    justify-content:center;
     gap: 30px;
     height: 440px;
 }
 .feature-card-item{
     background-color: #250D44;
     border-radius: 0px 0px 10px 10px;
-    
+    width: 380px;
 }
-.feature-card-item iframe {
+.feature-card-item iframe{
     width: 380px;
     height: 214px;
     border-radius: 10px 10px 0px 0px;
@@ -303,8 +342,7 @@ nav {
 }
 .host-container {
     display: flex;
-    width: 100%;
-    max-width: 1200px;
+    max-width: 70%;
     margin: 0px auto;
     gap: 24px;
     background-color: #250D44;
@@ -343,13 +381,13 @@ nav {
 .footer-section{
     background-image: url(image/footer-bg.png);
     width: 100%;
-    height: 380px;
+    /* height: 380px; */
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 120px;
+    padding: 100px;
 }
 .footer-content{
-    width: 1200px;
+    max-width: 100%;
     margin: 0px auto;
     text-align: center;
 }
@@ -383,4 +421,12 @@ nav {
     color: #ffffff;
     opacity: 83%;
     margin-top: 20px;
+}
+
+
+
+@media screen and (max-width:576px) {
+    .menu{
+        display: none;
+    }
 }
